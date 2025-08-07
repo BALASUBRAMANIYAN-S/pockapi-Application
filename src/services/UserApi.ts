@@ -11,7 +11,7 @@ export const UserApi = createApi({
       query: (offset = 0) => `pokemon?limit=20&offset=${offset}`,
     }),
      getPokemonByName: builder.query({
-      query: ({ name, numb }) => `pokemon/${name}`,
+      query: ({ name, }) => `pokemon/${name}`,
     }),
   }),
 });
