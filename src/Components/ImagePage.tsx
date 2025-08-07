@@ -1,4 +1,3 @@
-import React from "react";
 import { useGetPokemonByNameQuery } from "../services/UserApi";
 import { Link, useParams } from "react-router-dom";
 

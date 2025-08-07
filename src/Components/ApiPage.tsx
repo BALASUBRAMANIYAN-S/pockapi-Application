@@ -6,7 +6,6 @@ type Props = {};
 
 function ApiPage({}: Props) {
   const [offset, setOffset] = useState(0);
-  const numb = offset / 20 + 1;
   const { data, isLoading,isFetching } = useGetUserDataQuery(offset);
   const handlePrevious = () => {
     setOffset(offset - 20);
@@ -25,7 +24,7 @@ function ApiPage({}: Props) {
             className="text-gray-700 capitalize flex justify-between "
           >
             {item.name}
-            <Link to={`/details/${item.name}/${numb}`}>
+            <Link to={`/details/${item.name}`}>
               <button className="bg-blue-200 rounded-2xl px-1 ">Open ↗️</button>
             </Link>
           </li>

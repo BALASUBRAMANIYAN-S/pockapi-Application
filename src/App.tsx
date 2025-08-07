@@ -7,7 +7,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<ApiPage />} />
-        <Route path="/details/:name/:numb" element={<ImagePage />}/>
+        <Route path="/details/:name/" element={<ImagePage />}/>
       </Routes>
     </BrowserRouter>
   );
